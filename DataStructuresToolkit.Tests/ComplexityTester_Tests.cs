@@ -7,26 +7,26 @@ namespace DataStructuresToolkit.Tests
     [TestFixture]
     public class ComplexityTester_Tests
     {
-        private ComplexityTester tester;
+        private ComplexityTester Tester;
 
         [SetUp]
         public void Setup()
         {
-            tester = new ComplexityTester();
+            Tester = new ComplexityTester();
         }
 
         [Test]
         public void Test_RunConstantScenario()
         {
             int[] arr = { 42, 99, 123 };
-            var result = tester.RunConstantScenario(arr);
+            var result = Tester.RunConstantScenario(arr);
             Assert.That(result, Is.EqualTo(42));
 
 
             Stopwatch sw = Stopwatch.StartNew();
-            result = tester.RunConstantScenario(arr);
+            result = Tester.RunConstantScenario(arr);
             sw.Stop();
-            TestContext.WriteLine($"O(1) test: {sw.ElapsedMilliseconds} ms");
+            TestContext.WriteLine($"O(1) Test: {sw.ElapsedMilliseconds} ms");
         }
 
         [Test]
@@ -38,7 +38,7 @@ namespace DataStructuresToolkit.Tests
                 for (int i = 0; i < n; i++) arr[i] = 1;
 
                 Stopwatch sw = Stopwatch.StartNew();
-                var result = tester.RunLinearScenario(arr);
+                var result = Tester.RunLinearScenario(arr);
                 sw.Stop();
 
                 Assert.That(result, Is.EqualTo(n));
@@ -55,7 +55,7 @@ namespace DataStructuresToolkit.Tests
                 for (int i = 0; i < n; i++) arr[i] = 1;
 
                 Stopwatch sw = Stopwatch.StartNew();
-                var result = tester.RunQuadraticScenario(arr);
+                var result = Tester.RunQuadraticScenario(arr);
                 sw.Stop();
 
                 Assert.That(result, Is.EqualTo(n * n));

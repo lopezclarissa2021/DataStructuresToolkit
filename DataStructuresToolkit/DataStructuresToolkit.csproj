@@ -49,6 +49,7 @@
     <Compile Include="SortingSearchingHelpers.cs" />
     <Compile Include="StackQueues\MyQueue.cs" />
     <Compile Include="StackQueues\MyStack.cs" />
+    <Compile Include="TreeToolKit.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

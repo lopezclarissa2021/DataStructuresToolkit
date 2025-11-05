@@ -213,3 +213,4 @@ namespace DataStructuresToolkit
             Console.WriteLine("Skewed BST Height: " + skewed.Height()); // Expected: 4
         }
     }
+}

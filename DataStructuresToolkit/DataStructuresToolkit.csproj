@@ -42,12 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayStringListHelpers.cs" />
+    <Compile Include="AssociativeHelpers.cs" />
     <Compile Include="AvlTree.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="ComplexityTester.cs" />
     <Compile Include="PriorityQueue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecursionHelpers.cs" />
+    <Compile Include="SimpleHashTable.cs" />
     <Compile Include="SortingSearchingHelpers.cs" />
     <Compile Include="StackQueues\MyQueue.cs" />
     <Compile Include="StackQueues\MyStack.cs" />

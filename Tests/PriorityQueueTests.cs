@@ -1,24 +1,26 @@
 ﻿using System;
+using System.Collections.Generic;
+using Xunit;
 using DataStructuresToolkit;
 
 namespace Tests
 {
-    public class PriorityQueueTest
+    public class PriorityQueueTest  
     {
-        public static void Run()
+        [Fact]
+        public void PriorityQueue_EnqueueAndDequeue_WorkCorrectly()
         {
             Console.WriteLine("\n=== Priority Queue Test ===");
 
             var pq = new PriorityQueue();
 
-            Console.WriteLine("Enqueuing 5, 2, 8:");
             pq.Enqueue(5);
             pq.Enqueue(2);
             pq.Enqueue(8);
-            pq.PrintHeap();
 
-            Console.WriteLine("Dequeued: " + pq.Dequeue()); // Should be 2
-            pq.PrintHeap();
+            Assert.Equal(2, pq.Dequeue());
+            Assert.Equal(5, pq.Dequeue());
+            Assert.Equal(8, pq.Dequeue());
         }
     }
 }

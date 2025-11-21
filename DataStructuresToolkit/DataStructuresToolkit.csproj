@@ -46,6 +46,7 @@
     <Compile Include="AvlTree.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="ComplexityTester.cs" />
+    <Compile Include="LinkedListHelpers.cs" />
     <Compile Include="PriorityQueue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecursionHelpers.cs" />

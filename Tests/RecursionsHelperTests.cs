@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using Xunit;
 using DataStructuresToolkit;
 
-namespace DataStructuresToolkit.Tests
+namespace Tests
 {
     public class RecursionHelpersTests
     {
